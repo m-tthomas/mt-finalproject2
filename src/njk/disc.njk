@@ -1,0 +1,26 @@
+{% extends '_templates/base.njk' %}
+
+{% block page_title %}Discography{% endblock %}
+
+{% block content %}
+<article class="container">
+  <h1>Discography</h1>
+  <p>cotent here</p>
+  <div class="row">
+  {% for disc in disc.discography %}
+  <div class="col-sm-6 col-lg-4">
+    <div class="card mb-4">
+      <div class="card border-primary">
+      <div class="card-body">
+        <h5 class="card-title text-success">{{ disc.title }}</h5>
+        <h6 class="card-captain">{{ disc.year }}</h6>
+      </div>
+      </div>
+    </div>
+  </div>
+   {% endfor %}
+</div>
+
+</article>
+  {% endblock %}
+
