@@ -14,16 +14,16 @@
   </div>
   <article class="container">
   <h1>Band members</h1>
-  <p>cotent here</p>
   <div class="row">
   {% for members in members.members %}
-  <div class="col-sm-6 col-lg-4">
+  <div class="col-sm-6 col-lg-3">
     <div class="card mb-4">
       <div class="card border-primary">
       <div class="card-body">
-        <h5 class="card-title text-success">{{ members.name }}</h5>
+        <h5 class="card-title text-success"><a href="members/{{ members.slug }}.html">{{ members.name }}</a></h5>
         <h6 class="card-captain">{{ members.instruments }}</h6>
         <p class="card-text text-secondary">{{ members.tenure }}</p>
+       <img src="..img/..members/ {{ imagebw }}.jpg" alt="member" class="img-fluid mb-4">
       </div>
       </div>
     </div>

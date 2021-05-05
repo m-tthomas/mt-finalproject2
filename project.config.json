@@ -28,6 +28,13 @@
       "array": "books",
       "slug": "slug",
       "path": "books"
+    },
+    {
+      "template": "bake-members",
+      "data": "members",
+      "array": "members",
+      "slug": "slug",
+      "path": "members"
     }
   ]
 }
