@@ -6,10 +6,10 @@
 
 {% block content %}
 <div class="container">
-  <div class="row">
+  <div class="row text-center">
     <div class="col-md-8 offset-md-2">
   <h1>About QUEEN</h1>
-  <p>We a band bro We a band bro We a band bro We a band bro We a band bro We a band bro We a band bro We a band bro We a band bro We a band bro We a band bro We a band bro.</p>
+  <p>Queen has always been a top favortie of mind. </p>
   </div>
   </div>
   <article class="container">
@@ -18,12 +18,11 @@
   {% for members in members.members %}
   <div class="col-sm-6 col-lg-3">
     <div class="card mb-4">
-      <div class="card border-primary">
+      <div class="card text-white border-light" style="background-color: black;">
       <div class="card-body">
-        <h5 class="card-title text-success"><a href="members/{{ members.slug }}.html">{{ members.name }}</a></h5>
-        <h6 class="card-captain">{{ members.instruments }}</h6>
-        <p class="card-text text-secondary">{{ members.tenure }}</p>
-       <img src="..img/..members/ {{ imagebw }}.jpg" alt="member" class="img-fluid mb-4">
+        <h5 class="card-title"><a href="members/{{ members.slug }}.html">{{ members.name }}</a></h5>
+        <p class="card-text text-white">{{ members.instruments }}</p>
+       <img src="img/members/{{ members.imagebw }}" alt="member" class="card-img-top">
       </div>
       </div>
     </div>

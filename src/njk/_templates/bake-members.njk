@@ -10,13 +10,11 @@
   <article class="container">
     <div class="row">
       <div class="col-sm-4">
-          <img src="img/members/{{ image }}.jpg" alt="name" class="img-fluid mb-4">
+          <img src="{{relative_path}}img/members/{{ image }}" alt="name" class="img-fluid mb-4">
       </div>
       <div class="col-sm-8">
-          <h1>{{ name }}</h1>
-          <h3>{{ instruments }}</h3>
-          <h3>{{ tenure }}</h3>
-          <h4>{{ birthplace }}</h4>
+          <h1 class="text-uppercase">{{ name }}</h1>
+          <p class="byline">{{ instruments }} | {{ birthplace }} | {{ birthdate }} | {{ tenure }}</p>
           <p>{{ description | safe }}</p>
       </div>
     </div>

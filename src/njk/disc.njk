@@ -4,16 +4,20 @@
 
 {% block content %}
 <article class="container">
+<div class="row text-center">
+  <div class="col-md-8 offset-md-2">
   <h1>Discography</h1>
+  </div>
+  </div>
   <div class="row">
   {% for disc in disc.discography %}
   <div class="col-sm-6 col-lg-4">
     <div class="card mb-4">
-      <div class="card border-primary">
+      <div class="card text-white border-light" style="background-color: black;">
       <div class="card-body">
-        <h5 class="card-title text-success">{{ disc.title }}</h5>
+        <h5 class="card-title text-danger">{{ disc.title }}</h5>
         <h6 class="card-captain">{{ disc.year }}</h6>
-        <img src="/img/{{ image }}.jpg" alt="" class="img-fluid mb-4">
+        <img src="img/discs/{{ disc.image }}" alt="album" class="img-fluid mb-4">
       </div>
       </div>
     </div>
