@@ -1,0 +1,35 @@
+{% extends '_templates/base.njk' %}
+
+{% block page_title %}Tour Dates{% endblock %}
+
+{% block content %}
+<article class="container">
+<div class="row text-center">
+  <div class="col-md-8 offset-md-2">
+  <h1>Tour Dates</h1>
+  </div>
+  </div>
+  <div class="row">
+  {% for tour in tour.tour2021 %}
+  <div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>City</th>
+        <th>Venue</th>
+      </tr>
+      <tbody>
+      <tr>
+        <td>{{ tour2021.date }}</td>
+        <td>{{ tour2021.city }}</td>
+        <td>{{ tour2021.venue }}</td>
+      </tr>
+    </tbody>
+  </table>
+   {% endfor %}
+</div>
+
+</article>
+  {% endblock %}
+
