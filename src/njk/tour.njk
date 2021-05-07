@@ -10,7 +10,6 @@
   </div>
   </div>
   <div class="row">
-  {% for tour in tour.tour2021 %}
   <div class="table-responsive">
   <table class="table">
     <thead>
@@ -20,14 +19,15 @@
         <th>Venue</th>
       </tr>
       <tbody>
+      {% for tour in tour.tour2021 %}
       <tr>
-        <td>{{ tour2021.date }}</td>
-        <td>{{ tour2021.city }}</td>
-        <td>{{ tour2021.venue }}</td>
+        <td>{{ tour.date }}</td>
+        <td>{{ tour.city }}</td>
+        <td>{{ tour.venue }}</td>
       </tr>
+       {% endfor %}
     </tbody>
   </table>
-   {% endfor %}
 </div>
 
 </article>

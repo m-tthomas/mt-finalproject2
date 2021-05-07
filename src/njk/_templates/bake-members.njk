@@ -14,7 +14,12 @@
       </div>
       <div class="col-sm-6 col-md-9 col-lg-6">
           <h1 class="text-uppercase">{{ name }}</h1>
-          <p class="byline">{{ instruments }} | {{ birthplace }} | {{ birthdate }} | {{ tenure }}</p>
+          <p class="byline">
+          <ul>
+            <li>Instruments: {{ instruments }}</li>
+            <li>Birthpalce: {{ birthplace }}</li>
+            <li>Birthday: {{ birthdate }}</li>
+            <li>Tenure: {{ tenure }}</li></p>
           <p>{{ description | safe }}</p>
       </div>
     </div>
